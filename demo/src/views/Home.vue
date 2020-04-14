@@ -61,22 +61,10 @@ export default {
   },
   methods: {
     async fetch(){
-    //    const res = await this.$http.get('')
-    //  // this.tableData = res.data
-    //     window.console.log(res.data)
-       const options = {
-        url: 'http://59.196.99.4/gateway/api/1/get_qiye?ENTNAME=加贝',
-        method: 'GET',
-        headers: { 'AppKey': '688337637353717760' },
-      }
-      this.$axios(options)
-      // .then((res) => {
-      //   console.log('Login suceeded!')
-      // })
-      // .catch((err) => {
-      //   console.error('Login failed.');
-      // })
-      
+       const res = await this.$http.get('')
+     // this.tableData = res.data
+        window.console.log(res.data)
+     
       },
   },
   created() {
