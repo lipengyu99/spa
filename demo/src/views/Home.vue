@@ -60,21 +60,22 @@ export default {
     }
   },
   methods: {
-    // async fetch(){
-    //    const res = await this.$http.get('/get_qiye?ENTNAME=加贝')
-    //  // this.tableData = res.data
-    //     window.console.log(res.data)
+    async fetch(){
+       const res = await this.$http.get('/get_qiye?ENTNAME=加贝')
+     // this.tableData = res.data
+        window.console.log(res.data)
      
-    //   },
+      },
     
   },
   created() {
-    this.$axios.get('/1/get_qiye?ENTNAME=加贝').then(res =>{
-      console.log(res);
+    // this.$axios.get('/1/get_qiye?ENTNAME=加贝').then(res =>{
+    //   console.log(res);
       
-    }).catch(err=>{
-      console.log(err)
-    })
+    // }).catch(err=>{
+    //   console.log(err)
+    // })
+    this.fetch()
   },
 }
 </script>
