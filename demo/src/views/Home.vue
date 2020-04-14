@@ -69,12 +69,13 @@ export default {
     
   },
   created() {
-    // this.$axios.get('/1/get_qiye?ENTNAME=加贝').then(res =>{
+    // this.$axios.get('/1/get_qiye?ENTNAME=加贝',Headers : { 'AppKey': '688337637353717760' }).then(res =>{
     //   console.log(res);
       
     // }).catch(err=>{
     //   console.log(err)
     // })
+  
     this.fetch()
   },
 }
