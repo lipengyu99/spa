@@ -10,7 +10,7 @@ module.exports = {
         hotOnly: false, //是否开启热更新
         proxy: {
             '/api': {
-                target: 'http://59.196.99.4/gateway', //API服务器的地址
+                target: 'http://59.196.99.4/gateway/api/1/', //API服务器的地址
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': ''

@@ -69,7 +69,7 @@ export default {
     
   },
   created() {
-    this.$axios.get('/get_qiye?ENTNAME=加贝').then(res =>{
+    this.$axios.get('/1/get_qiye?ENTNAME=加贝').then(res =>{
       console.log(res);
       
     }).catch(err=>{
