@@ -9,7 +9,7 @@
   <div class="btn">
     <el-button type="warning" round>发送请求</el-button>
   </div>
-  
+<div>{{tableData}}</div>
    <el-table
       :data="tableData"
       style="width: 100%">
@@ -62,7 +62,7 @@ export default {
   methods: {
     async fetch(){
        const res = await this.$http.get('/query')
-     // this.tableData = res.data
+      this.tableData = res.data
         window.console.log(res.data)
      
       },
