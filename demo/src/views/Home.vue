@@ -60,27 +60,27 @@ export default {
     }
   },
   methods: {
-    // async fetch(){
-    //    const res = await this.$http.get('/get_qiye?ENTNAME=加贝')
-    //  // this.tableData = res.data
-    //     window.console.log(res.data)
+    async fetch(){
+       const res = await this.$http.get('/query')
+     // this.tableData = res.data
+        window.console.log(res.data)
      
-    //   },
+      },
     
   },
   created() {
-    this.$axios.get('/1/get_qiye?ENTNAME=加贝',({
-    baseURL: 'http://59.196.99.4/gateway/api',
-    headers: { 'AppKey': '688337637353717760' },
-    withCredentials: false,
-    })).then(res =>{
-      console.log(res);
+    // this.$axios.get('/1/get_qiye?ENTNAME=加贝',({
+    // baseURL: 'http://59.196.99.4/gateway/api',
+    // headers: { 'AppKey': '688337637353717760' },
+    // withCredentials: false,
+    // })).then(res =>{
+    //   console.log(res);
       
-    }).catch(err=>{
-      console.log(err)
-    })
+    // }).catch(err=>{
+    //   console.log(err)
+    // })
   
-    //this.fetch()
+    this.fetch()
   },
 }
 </script>
