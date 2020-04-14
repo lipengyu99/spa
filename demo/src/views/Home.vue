@@ -60,15 +60,21 @@ export default {
     }
   },
   methods: {
-    async fetch(){
-       const res = await this.$http.get('')
-     // this.tableData = res.data
-        window.console.log(res.data)
+    // async fetch(){
+    //    const res = await this.$http.get('/get_qiye?ENTNAME=加贝')
+    //  // this.tableData = res.data
+    //     window.console.log(res.data)
      
-      },
+    //   },
+    
   },
   created() {
-    this.fetch()
+    this.$axios.get('/get_qiye?ENTNAME=加贝').then(res =>{
+      console.log(res);
+      
+    }).catch(err=>{
+      console.log(err)
+    })
   },
 }
 </script>
