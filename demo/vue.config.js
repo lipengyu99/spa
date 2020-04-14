@@ -5,12 +5,12 @@ module.exports = {
     devServer: {
         open: false, //是否自动弹出浏览器页面
         host: "localhost",
-        port: '8080',
+        port: '8081',
         https: false,   //是否使用https协议
         hotOnly: false, //是否开启热更新
         proxy: {
             '/api': {
-                target: '', //API服务器的地址
+                target: 'http://59.196.99.4/gateway/api/1/', //API服务器的地址
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': ''
