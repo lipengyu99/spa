@@ -8,15 +8,15 @@ module.exports = {
         port: '8081',
         https: false,   //是否使用https协议
         hotOnly: false, //是否开启热更新
-        // proxy: {
-        //     '/api': {
-        //         target: 'http://59.196.99.4/gateway/api/1/', //API服务器的地址
-        //         changeOrigin: true,
-        //         pathRewrite: {
-        //             '^/api': ''
-        //         }
-        //     }
-        // },
+        proxy: {
+            '': {
+                target: 'http://127.0.0.1/', //API服务器的地址
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/': ''
+                }
+            }
+        },
         
     }
 }
