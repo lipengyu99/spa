@@ -71,7 +71,7 @@ export default {
   created() {
     this.$axios.get('/1/get_qiye?ENTNAME=加贝',({
     baseURL: 'http://59.196.99.4/gateway/api',
-    headers: { 'AppKey': '688337637353717760','Content-Type': 'application/json' },
+    headers: { 'AppKey': '688337637353717760' },
     withCredentials: false,
     })).then(res =>{
       console.log(res);
