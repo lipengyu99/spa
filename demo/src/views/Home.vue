@@ -60,28 +60,28 @@ export default {
     }
   },
   methods: {
-    // async fetch(){
-    //    const res = await this.$http.get('/query')
-    //  // this.tableData = res.data
-    //     window.console.log(res.data)
+    async fetch(){
+       const res = await this.$http.get('/query')
+     // this.tableData = res.data
+        window.console.log(res.data)
      
-    //   },
+      },
     
   },
   created() {
-    this.$axios.get('/query',({
-    baseURL: 'http://127.0.0.1:8080',
-    headers: { 'AppKey': '688337637353717760' },
-    withCredentials: false,
+    // this.$axios.get('/query',({
+    // baseURL: 'http://127.0.0.1:8080',
+    // headers: { 'AppKey': '688337637353717760' },
+    // withCredentials: false,
     
-    })).then(res =>{
-      console.log(res);
+    // })).then(res =>{
+    //   console.log(res);
       
-    }).catch(err=>{
-      console.log(err)
-    })
+    // }).catch(err=>{
+    //   console.log(err)
+    // })
   
-    //this.fetch()
+    this.fetch()
   },
 }
 </script>
