@@ -7,7 +7,7 @@ import Axios from "axios";
 
 Vue.prototype.$http = http
 Vue.prototype.$axios = Axios
-Axios.defaults.baseURL = '/api'
+Axios.defaults.baseURL = '/rest'
 Axios.defaults.headers.get['Content-Type'] = 'application/json';
 
 Vue.config.productionTip = false
