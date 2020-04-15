@@ -120,17 +120,17 @@ export default {
     
   },
   created() {
-    // this.$axios.get('/query',({
-    // baseURL: 'http://127.0.0.1:8080',
-    // headers: { 'AppKey': '688337637353717760' },
-    // withCredentials: false,
+    this.$axios.get('/1/get_qiye?ENTNAME=加贝',({
+   // baseURL: 'http://127.0.0.1:8080',
+    headers: { 'AppKey': '688337637353717760' },
+    withCredentials: false,
     
-    // })).then(res =>{
-    //   console.log(res);
+    })).then(res =>{
+      console.log(res);
       
-    // }).catch(err=>{
-    //   console.log(err)
-    // })
+    }).catch(err=>{
+      console.log(err)
+    })
   
   //  this.fetch()
   },

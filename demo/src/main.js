@@ -3,12 +3,12 @@ import App from './App.vue'
 import './plugins/element.js'
 import router from './router'
 import http from "./http";
-//import Axios from "axios";
+import Axios from "axios";
 
 Vue.prototype.$http = http
-//Vue.prototype.$axios = Axios
-// Axios.defaults.baseURL = '/api'
-// Axios.defaults.headers.get['Content-Type'] = 'application/json';
+Vue.prototype.$axios = Axios
+Axios.defaults.baseURL = '/api'
+Axios.defaults.headers.get['Content-Type'] = 'application/json';
 
 Vue.config.productionTip = false
 new Vue({
