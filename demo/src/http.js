@@ -1,6 +1,5 @@
 import asxios from "axios";
-// import Vue from 'vue'
-// import router from "./router/index";
+
 asxios.defaults.baseURL = '/api'
 const http = asxios.create({
     // baseURL: process.env.VUE_APP_API_URL || '/web/api',
